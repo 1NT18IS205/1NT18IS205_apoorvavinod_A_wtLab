@@ -1,0 +1,42 @@
+h4 {
+  text-align: center;
+  font-size: 1em;
+  color: #009;
+  margin-bottom: 0.3em;
+  text-decoration: underline;
+}
+
+table {
+  margin: 0.3em;
+  width: 100px;
+}
+
+th {
+  padding: 0.5em;
+}
+
+td {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border: 1px solid #900;
+  background-color: #ffc;
+}
+
+#trHeader {
+  text-decoration: underline;
+  color: #900;
+}
+
+.centerCell {
+  text-align: center;
+}
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
