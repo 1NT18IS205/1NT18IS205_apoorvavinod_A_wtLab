@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, 
+                initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        .container {
+            padding: 15px;
+            width: 400px;
+        }
+          
+        label,
+        input {
+            margin-bottom: 10px;
+        }
+          
+        button {
+            float: right;
+            margin-right: 10px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+  
+<body>
+    <center>
+        <h1>Error</h1>
+        <br>
+        <div class="container">
+            <div>
+                <label>Phone no:</label>
+                <input type="text"
+                    id="number" size="40">
+                <span id="error"></span>
+            </div>
+            <button type="submit"
+                    onclick="errorMessage()">
+                Submit
+            </button>
+        </div>
+    </center>
+</body>
+<script>
+    function errorMessage() {
+        var error = document.getElementById("error")
+        if (isNaN(document.getElementById("number").value)) 
+        {
+  
+            // Changing HTML to draw attention
+            error.innerHTML = "<span style='color: red;'>"+
+                        "Please enter a valid number</span>"
+        } else {
+            error.innerHTML = "<span style='color:red;'>"+ "Please enter a number</span>"
+        } 
+    }
+
+    
+</script>
+  
+</html>
+function required()
+        {
+             var empt = document.form1.text1.value;
+            if (empt === "")
+            {
+                alert("Please input a Value");
+                return false;
+            }
+            else    
+            {
+                alert('Code has accepted : you can try another');
+                return true; 
+            }
+        }
+        
