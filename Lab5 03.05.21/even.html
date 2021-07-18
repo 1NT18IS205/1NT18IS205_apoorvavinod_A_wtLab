@@ -1,0 +1,20 @@
+capture phase- capturing the event(outermost parent class to child class)
+bubbling phase- something that comes from inside to outside(event will be handled from child class to parent class)
+only nested 
+
+
+<button>Change Color</button>
+    <script>
+        const btn= document.querySelectorAll('button');
+
+        function random(number){
+            return Math.floor(Math.random()*number);
+        }
+
+        function bgChange(){
+            const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.onClick = bgChange;
+    </script>
